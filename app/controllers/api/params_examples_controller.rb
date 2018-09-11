@@ -4,4 +4,9 @@ class Api::ParamsExamplesController < ApplicationController
     @street_sweeper = params["taco"]
     render "query_params_view.json.jbuilder"
   end
-end
+
+  def segment_params_action
+    @input_value = params["this_is_a_key"]
+    render "segment_params_view.json.jbuilder"
+  end
+end  
